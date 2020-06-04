@@ -1,0 +1,10 @@
+C:\Users\mouta\source\repos\GueuleLoup\bin\Debug\GueuleLoup.exe.config
+C:\Users\mouta\source\repos\GueuleLoup\bin\Debug\GueuleLoup.exe
+C:\Users\mouta\source\repos\GueuleLoup\bin\Debug\GueuleLoup.pdb
+C:\Users\mouta\source\repos\GueuleLoup\obj\Debug\GueuleLoup.csprojAssemblyReference.cache
+C:\Users\mouta\source\repos\GueuleLoup\obj\Debug\GueuleLoup.FormMain.resources
+C:\Users\mouta\source\repos\GueuleLoup\obj\Debug\GueuleLoup.Properties.Resources.resources
+C:\Users\mouta\source\repos\GueuleLoup\obj\Debug\GueuleLoup.csproj.GenerateResource.cache
+C:\Users\mouta\source\repos\GueuleLoup\obj\Debug\GueuleLoup.csproj.CoreCompileInputs.cache
+C:\Users\mouta\source\repos\GueuleLoup\obj\Debug\GueuleLoup.exe
+C:\Users\mouta\source\repos\GueuleLoup\obj\Debug\GueuleLoup.pdb
