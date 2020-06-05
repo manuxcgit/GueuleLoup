@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.label1 = new System.Windows.Forms.Label();
             this.tBAngle = new System.Windows.Forms.TextBox();
             this.pBox = new System.Windows.Forms.PictureBox();
@@ -38,6 +39,9 @@
             this.tBLongueur = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tBIndex = new System.Windows.Forms.TextBox();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tBDiametre = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,8 +60,9 @@
             this.tBAngle.Name = "tBAngle";
             this.tBAngle.Size = new System.Drawing.Size(35, 20);
             this.tBAngle.TabIndex = 1;
+            this.tBAngle.Text = "0";
             this.tBAngle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tBAngle.TextChanged += new System.EventHandler(this.e_tBAngle_TextChanged);
+            this.tBAngle.TextChanged += new System.EventHandler(this.e_tBValeur_TextChanged);
             // 
             // pBox
             // 
@@ -77,15 +82,16 @@
             this.bImprimer.TabIndex = 3;
             this.bImprimer.Text = "Imprimer";
             this.bImprimer.UseVisualStyleBackColor = true;
+            this.bImprimer.Click += new System.EventHandler(this.e_bImprimer_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(112, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Epasisseur :";
+            this.label2.Text = "Epaisseur :";
             // 
             // tBEpaisseur
             // 
@@ -95,7 +101,7 @@
             this.tBEpaisseur.TabIndex = 5;
             this.tBEpaisseur.Text = "2";
             this.tBEpaisseur.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tBEpaisseur.TextChanged += new System.EventHandler(this.e_tBAngle_TextChanged);
+            this.tBEpaisseur.TextChanged += new System.EventHandler(this.e_tBValeur_TextChanged);
             // 
             // label3
             // 
@@ -131,11 +137,42 @@
             this.tBIndex.TabIndex = 9;
             this.tBIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(240, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Diamètre :";
+            // 
+            // tBDiametre
+            // 
+            this.tBDiametre.Location = new System.Drawing.Point(301, 6);
+            this.tBDiametre.Name = "tBDiametre";
+            this.tBDiametre.Size = new System.Drawing.Size(35, 20);
+            this.tBDiametre.TabIndex = 11;
+            this.tBDiametre.Text = "40";
+            this.tBDiametre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tBDiametre.TextChanged += new System.EventHandler(this.e_tBValeur_TextChanged);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(667, 404);
+            this.Controls.Add(this.tBDiametre);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.tBIndex);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tBLongueur);
@@ -168,6 +205,9 @@
         private System.Windows.Forms.TextBox tBLongueur;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tBIndex;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tBDiametre;
     }
 }
 
