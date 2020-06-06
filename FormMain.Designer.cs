@@ -60,7 +60,7 @@
             this.tBAngle.Name = "tBAngle";
             this.tBAngle.Size = new System.Drawing.Size(35, 20);
             this.tBAngle.TabIndex = 1;
-            this.tBAngle.Text = "0";
+            this.tBAngle.Text = "90";
             this.tBAngle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tBAngle.TextChanged += new System.EventHandler(this.e_tBValeur_TextChanged);
             // 
